@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Sushi ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,400;1,500&family=Work+Sans:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="petals" aria-hidden="true"></div>
+
+<!-- ============ COVER / ENVELOPE ============ -->
+<section id="cover" class="screen">
+  <div class="envelope" id="envelope" tabindex="0" role="button" aria-label="Open the envelope">
+    <div class="envelope-shadow"></div>
+    <div class="envelope-body">
+      <div class="envelope-flap"></div>
+      <div class="envelope-front">
+        <span class="envelope-label">Open Me Last</span>
+        <span class="envelope-heart">❤</span>
+      </div>
+      <div class="envelope-letter">
+        <p class="fold-line">This bouquet will slowly fade…</p>
+        <p class="fold-line">But what I'm about to show you won't.</p>
+        <p class="scan-line">Scan this.</p>
+        <p class="sign">Love, Your Batman ❤️</p>
+      </div>
+    </div>
+  </div>
+  <p class="tap-hint">tap the envelope</p>
+</section>
+
+<!-- ============ OPENING MESSAGE ============ -->
+<section id="opening" class="screen reveal-section">
+  <div class="opening-inner">
+    <p class="eyebrow">for Sushi</p>
+    <h1>If you're reading this…</h1>
+    <p class="opening-line">That means you've reached the last surprise.</p>
+    <p class="opening-line">Flowers bloom. Flowers fade.</p>
+    <p class="opening-line accent">But loving you will never go out of season.</p>
+    <p class="opening-welcome">Welcome to our little world.</p>
+    <div class="scroll-cue">
+      <span></span>
+      <p>keep going</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLOWER TAGS ============ -->
+<section id="flowers" class="screen reveal-section">
+  <div class="section-head">
+    <p class="eyebrow">every flower had something to say</p>
+    <h2>Ten small tags,<br>tied to ten red roses.</h2>
+    <p class="section-note">Turn each one over.</p>
+  </div>
+
+  <div class="tag-grid" id="tagGrid"></div>
+</section>
+
+<!-- ============ HIDDEN NOTES ============ -->
+<section id="notes" class="screen reveal-section">
+  <div class="section-head">
+    <p class="eyebrow">folded into the leaves, where you'd least expect them</p>
+    <h2>Seven notes<br>I hid where you'd find them slowly.</h2>
+    <p class="section-note">Unfold them one at a time.</p>
+  </div>
+
+  <div class="notes-stack" id="notesStack"></div>
+</section>
+
+<!-- ============ MEMORY CARD ============ -->
+<section id="memories" class="screen reveal-section">
+  <div class="section-head">
+    <p class="eyebrow">a few, out of thousands</p>
+    <h2>My favourite memories.</h2>
+  </div>
+  <ul class="memory-list" id="memoryList"></ul>
+</section>
+
+<!-- ============ MAIN LETTER ============ -->
+<section id="letter" class="screen reveal-section">
+  <div class="letter-paper">
+    <p class="letter-greeting">Hi Sushi ❤️</p>
+
+    <p>There are so many things I want to tell you every day.</p>
+
+    <p>But sometimes words don't come out the way they should. Sometimes I tease you instead. Sometimes I just smile. Sometimes I stay quiet.</p>
+
+    <p>But that silence should never make you doubt one thing.</p>
+
+    <p>You are incredibly important to me. You're my favourite person. You're my safest place. You're the first person I want to tell everything to.</p>
+
+    <p class="letter-hinglish">Tu janti hai na… kabhi kabhi meko pyaar dikhana nahi aata. Main tease zyada karta hu, bol kam pata hu. Par iska matlab kabhi bhi ye nahi hota ki tu important nahi hai.</p>
+
+    <p class="letter-hinglish">Sach bataun… Tu meri life ki sabse special person hai. Tu meri favourite person hai. Aur main hamesha tere saath hu.</p>
+
+    <p>But I promise… The love is always there. Every single day.</p>
+
+    <p>Thank you for making my life happier just by being in it.</p>
+
+    <p>And if someday things get difficult… Hold my hand.</p>
+
+    <p class="letter-together">We'll figure it out together.</p>
+
+    <p class="letter-always">Always.</p>
+
+    <p class="letter-love">I love you.</p>
+
+    <p class="letter-heart">❤️</p>
+  </div>
+</section>
+
+<!-- ============ BATMAN LIFETIME PASS ============ -->
+<section id="pass" class="screen reveal-section">
+  <div class="section-head">
+    <p class="eyebrow">terms and conditions do not apply</p>
+    <h2>One pass.<br>No expiry.</h2>
+  </div>
+  <div class="pass-card">
+    <div class="pass-top">
+      <span class="pass-bat">🦇</span>
+      <div>
+        <p class="pass-title">Batman's Lifetime Pass</p>
+        <p class="pass-subtitle">Valid for one very special person</p>
+      </div>
+    </div>
+    <ul class="pass-perks" id="passPerks"></ul>
+    <div class="pass-bottom">
+      <span>Expiry</span>
+      <span class="pass-never">Never</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL PROMISE ============ -->
+<section id="promise" class="screen reveal-section">
+  <p class="eyebrow">before anything else</p>
+  <h2 class="promise-title">I don't know what life has planned.</h2>
+  <p class="promise-line">But as long as you'll have me…</p>
+  <p class="promise-line accent">I'll keep choosing you.</p>
+  <p class="promise-line">Every single day.</p>
+  <p class="promise-heart">❤️</p>
+</section>
+
+<!-- ============ POLAROIDS (optional, replace src) ============ -->
+<section id="polaroids" class="screen reveal-section">
+  <div class="section-head">
+    <p class="eyebrow">a few frames, out of thousands</p>
+    <h2>Us.</h2>
+  </div>
+  <div class="polaroid-row" id="polaroidRow">
+    <!-- Replace these placeholder blocks with real <img> tags — see README -->
+    <div class="polaroid" style="--r:-6deg"><div class="polaroid-photo placeholder">add photo 1</div></div>
+    <div class="polaroid" style="--r:4deg"><div class="polaroid-photo placeholder">add photo 2</div></div>
+    <div class="polaroid" style="--r:-3deg"><div class="polaroid-photo placeholder">add photo 3</div></div>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section id="finale" class="screen">
+  <p class="eyebrow">this is where the bouquet keeps going</p>
+  <h2 class="finale-title">Welcome to our little world.</h2>
+  <p class="finale-sub">Every flower fades. This page won't.</p>
+  <p class="finale-ps"><span>PS.</span> This website doesn't have an ending… because I'm hoping our story doesn't either.</p>
+  <p class="finale-sign">— Your Batman ❤️</p>
+</section>
+
+<!-- ============ SECRET NOTE (easter egg) ============ -->
+<button id="secretHeart" class="secret-heart" aria-label="A small heart. Curious?">❤</button>
+
+<div id="secretOverlay" class="secret-overlay" aria-hidden="true">
+  <div class="secret-card">
+    <p>Agar ye note mila…</p>
+    <p>Matlab tu sach me pura bouquet explore kar rahi thi. 😭❤️</p>
+    <p class="secret-love">I love you pagli.</p>
+    <button id="secretClose" class="secret-close">close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

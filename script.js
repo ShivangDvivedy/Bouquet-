@@ -294,9 +294,14 @@ function buildPassPerks(){
 // ===================================================================
 function setupEnvelope(){
   const envelope = document.getElementById('envelope');
+  const music = document.getElementById('bgMusic');
   const open = () => {
     envelope.classList.add('is-open');
     envelope.setAttribute('aria-label', 'Envelope opened');
+    if (music) {
+      music.volume = 0.7;
+      music.play().catch(() => { /* browser blocked autoplay — she can tap again */ });
+    }
     setTimeout(() => {
       document.getElementById('opening').scrollIntoView({ behavior: 'smooth' });
     }, 1300);
